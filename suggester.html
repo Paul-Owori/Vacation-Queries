@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src="js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/scripts.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Vacation Suggester;</h2>
+    <form class="" action="index.html" method="post">
+      What would you like us to call you? (Just your first name or a nick name will do) <br>
+      <input type="text" id="name">
+
+      <div class="container">
+        <h4>To get a good suggestion, please answer the following questions as honestly as possible.</h4>
+
+        <div class="age">
+          <p>1. Are you over 18?</p>
+          <input type="radio" name="age" value="" id="old"> Yes, I am. <br>
+          <input type="radio" name="age" value="" id="young"> No, I'm not 18 yet. <br>
+
+        </div>
+
+        <div class="weather">
+        <p>2. What kind of weather do you prefer?</p>
+
+        <input type="radio" id="hot" name="weather"> Blistering hot <br>
+        <input type="radio" id="tropical" name="weather"> Mild tropical <br>
+        <input type="radio" id="cold" name="weather"> Icicles in my hair <br>
+        </div>
+
+        <div class="night">
+          <p>3. What kind of night life do you prefer?</p>
+
+          <input type="radio" name="night" id="sleep" value=""> A good nights sleep <br>
+          <input type="radio" name="night" id="party" value=""> Party till you see the sun <br>
+          <input type="radio" name="night" id="drinks" value=""> A calm place to have a few drinks <br>
+        </div>
+
+        <div class="long">
+          <p>4. How long will your vacation be?</p>
+
+          <input type="radio" name="long" value="" id="week"> A week or less <br>
+          <input type="radio" name="long" value="" id="month"> A month or less <br>
+          <input type="radio" name="long" value="" id="long"> Longer than a month <br>
+
+        </div>
+
+        <div class="company">
+          <p>5. Will you be travelling with company</p>
+
+          <input type="radio" name="company" value="" id="alone"> No, I'm travelling alone. <br>
+          <input type="radio" name="company" value="" id="family"> Yes, I'm travelling with family. <br>
+          <input type="radio" name="company" value="" id="friends"> Yes, I'm traveling with friends. <br>
+
+        </div>
+      </div>
+
+      <div class="submitter">
+        <h4>Submit:</h4>
+
+        <input type="reset" value="Reset">     <input type="submit" value="Submit form">
+
+      </div>
+
+
+    </form>
+
+    <div class="suggestion">
+      <h3>Here is your suggestion!</h3>
+
+    </div>
+
+
+
+
+
+
+
+
+  </body>
+</html>
