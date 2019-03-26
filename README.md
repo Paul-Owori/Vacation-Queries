@@ -9,4 +9,4 @@ The program github page can be accessed [here.](https://github.com/Paul-Owori/Va
 
 The program can be tested [here.](https://paul-owori.github.io/Vacation-Queries/)
 
-&copy; 2019 Paul Owori
+&copy; 2019 Paul Owori.
