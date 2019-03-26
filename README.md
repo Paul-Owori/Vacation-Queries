@@ -5,6 +5,8 @@
 * The user input from the radio buttons is processed with jQuery and suggestions are generated.
 * The suggestions are presented to the user.
 
-The program github page can be [accessed here](https://github.com/Paul-Owori/Vacation-Queries)
+The program github page can be accessed [here.](https://github.com/Paul-Owori/Vacation-Queries)
+
+The program can be tested [here.](https://paul-owori.github.io/Vacation-Queries/)
 
 &copy; 2019 Paul Owori
