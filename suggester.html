@@ -3,74 +3,96 @@
   <head>
     <script type="text/javascript" src="js/jquery-3.3.1.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/scripts.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/suggester.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+    <div class="container">
+
     <h2>Vacation Suggester;</h2>
     <form class="" action="index.html" method="post">
       What would you like us to call you? (Just your first name or a nick name will do) <br>
-      <input type="text" id="name">
+      <input type="text" id="name" >
 
       <div class="container">
-        <h4>To get a good suggestion, please answer the following questions as honestly as possible.</h4>
+          <h4>To get a good suggestion, please answer the following questions as honestly as possible.</h4>
 
-        <div class="age">
-          <p>1. Are you over 18?</p>
-          <input type="radio" name="age" value="" id="old"> Yes, I am. <br>
-          <input type="radio" name="age" value="" id="young"> No, I'm not 18 yet. <br>
+          <div class="age">
+            <p>1. Are you over 18?</p>
+
+            (a)<input type="radio" name="age" value="1" id="young"> Not yet. <br>
+            (b)<input type="radio" name="age" value="2" id="shady"> I don't want to answer this.<br>
+            (c)<input type="radio" name="age" value="3" id="old"> Yes, I am. <br>
+
+
+          </div>
+
+          <div class="weather">
+          <p>2. What kind of weather do you prefer?</p>
+
+          (a)<input type="radio" id="hot" name="weather" value="1"> I'm not too particular about this. <br>
+          (b)<input type="radio" id="cold" name="weather" value="2"> Weather that lets me stay out all day. <br>
+          (c)<input type="radio" id="tropical" name="weather" value="3"> Weather that lets me stay out all day, and night too. <br>
+          </div>
+
+          <div class="night">
+            <p>3. What kind of night life do you prefer?</p>
+
+            (a)<input type="radio" name="night" id="sleep" value="1"> A good nights sleep <br>
+            (b)<input type="radio" name="night" id="drinks" value="2"> A calm place to have a few drinks <br>
+            (c)<input type="radio" name="night" id="party" value="3"> Party till you see the sun <br>
+          </div>
+
+          <div class="long">
+            <p>4. How long will your vacation be?</p>
+
+            (a)<input type="radio" name="long" value="1" id="month"> I'm not sure yet <br>
+            (b)<input type="radio" name="long" value="2" id="long"> A month or less <br>
+            (c)<input type="radio" name="long" value="3" id="week"> A week or less <br>
+
+          </div>
+
+          <div class="company">
+            <p>5. Will you be travelling with company</p>
+
+            (a)<input type="radio" name="company" value="1" id="alone"> No, I'm travelling alone. <br>
+            (b)<input type="radio" name="company" value="2" id="family"> Yes, I'm travelling with family. <br>
+            (c)<input type="radio" name="company" value="3" id="friends"> Yes, I'm traveling with friends. <br>
+
+          </div>
+
+          <div class="terrain">
+            <p>6. Which of these three statements appeals to you the most?</p>
+            (a)<input type="radio" name="terrain" value="1"> I need a break from other people. <br>
+            (b)<input type="radio" name="terrain" value="2"> I want a family friendly experience. <br>
+            (c)<input type="radio" name="terrain" value="3"> I just want to party! <br>
+
+          </div>
+        </div>
+
+        <div class="submitter">
+          <h4>Submit:</h4>
+
+          <input type="reset" value="Reset">     <input type="submit" value="Submit form">
 
         </div>
 
-        <div class="weather">
-        <p>2. What kind of weather do you prefer?</p>
 
-        <input type="radio" id="hot" name="weather"> Blistering hot <br>
-        <input type="radio" id="tropical" name="weather"> Mild tropical <br>
-        <input type="radio" id="cold" name="weather"> Icicles in my hair <br>
-        </div>
+      </form>
+   </div>
+   <div class="suggestion">
 
-        <div class="night">
-          <p>3. What kind of night life do you prefer?</p>
-
-          <input type="radio" name="night" id="sleep" value=""> A good nights sleep <br>
-          <input type="radio" name="night" id="party" value=""> Party till you see the sun <br>
-          <input type="radio" name="night" id="drinks" value=""> A calm place to have a few drinks <br>
-        </div>
-
-        <div class="long">
-          <p>4. How long will your vacation be?</p>
-
-          <input type="radio" name="long" value="" id="week"> A week or less <br>
-          <input type="radio" name="long" value="" id="month"> A month or less <br>
-          <input type="radio" name="long" value="" id="long"> Longer than a month <br>
-
-        </div>
-
-        <div class="company">
-          <p>5. Will you be travelling with company</p>
-
-          <input type="radio" name="company" value="" id="alone"> No, I'm travelling alone. <br>
-          <input type="radio" name="company" value="" id="family"> Yes, I'm travelling with family. <br>
-          <input type="radio" name="company" value="" id="friends"> Yes, I'm traveling with friends. <br>
-
-        </div>
-      </div>
-
-      <div class="submitter">
-        <h4>Submit:</h4>
-
-        <input type="reset" value="Reset">     <input type="submit" value="Submit form">
-
-      </div>
+   </div>
 
 
-    </form>
 
-    <div class="suggestion">
-      <h3>Here is your suggestion!</h3>
+   <div class="finale">
 
-    </div>
+
+   </div>
+
+
 
 
 
