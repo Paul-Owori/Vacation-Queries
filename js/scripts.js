@@ -9,10 +9,33 @@
 
 $(document).ready(function(){
   var userInput = []
-
   var textInput = $("#name").val();
+
+
   $('#young').click(function(){
-    $("<p>Maybe you should fill this form with an adult</p>").insertAfter(".age");
+    var textInput = $("#name").val();
+    $('#added').remove();
+    $('#added1').remove();
+    $('#added2').remove();
+    $('<i id = "added1"> Maybe you should fill this form with an adult, ' + textInput + '</i>').insertAfter("#yet");
+
+  });
+
+  $('#shady').click(function(){
+    var textInput = $("#name").val();
+    $('#added').remove();
+    $('#added1').remove();
+    $('#added2').remove();
+    $('<i id = "added"> That\'s a bit shady, but we won\'t judge you, ' + textInput + '</i>').insertAfter("#judge");
+
+  });
+
+  $('#old').click(function(){
+    var textInput = $("#name").val();
+    $('#added').remove();
+    $('#added1').remove();
+    $('#added2').remove();
+    $('<i id = "added2"> That\'s perfect, ' + textInput + '. Please proceed.</i>').insertAfter("#aged");
 
   });
 
@@ -20,6 +43,8 @@ $(document).ready(function(){
        event.preventDefault();
 
        //$(.container){$(this).toggle()};
+
+       $('.all').append('<div class="suggestion"></div>')
 
 
 
@@ -75,7 +100,7 @@ $(document).ready(function(){
 
 
               if(b.length > a.length && b.length > c.length){
-                $('.suggestion').append('<p>You sound like you are travelling with family.</p>');
+                $('.suggestion').append('<p>You chose mostly b\'s so we think you might travelling with family.</p>');
                 $('.suggestion').append('<img class = "images" id="Family2" src="img/Family2.jpg"/><br>');
                 $('.suggestion').append('<img class = "images" id="Family1" src="img/Family1.jpg"/><br>');
                 $('.suggestion').append('<p>But just in case you are not, you could try here instead.</p>');
@@ -84,7 +109,7 @@ $(document).ready(function(){
               };
 
               if(c.length> a.length && c.length>b.length){
-                $('.suggestion').append('<p>Looking for a party? We know some great places.</p>');
+                $('.suggestion').append('<p>You chose mostly c\'s so we think you might be looking for a party. We know some great places.</p>');
                 $('.suggestion').append('<img class = "images" id="Party1" src="img/Party1.jpg"/><br>');
                 $('.suggestion').append('<img class = "images" id="Party2" src="img/Party2.jpg"/><br>');
                 $('.suggestion').append('<p>But just in case you are not, you could try here instead.</p>');
@@ -122,7 +147,7 @@ $(document).ready(function(){
 
 
 
-              $('.container').remove()
+              $('.containerone').remove()
 
 
        /*var adder = (
